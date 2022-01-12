@@ -437,6 +437,7 @@ form button{
     border:4rem;
     border-right: solid Turquoise;
     border-bottom: solid Turquoise;
+    margin-bottom: 2vw;
 }
 #social{
     display: flex;
