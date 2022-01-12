@@ -1,0 +1,610 @@
+
+@font-face {
+    font-family: 'nimbus_sans_lregular';
+    src:  url('NimbusSanL-Reg-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+*{
+    margin: 0%;    
+}
+
+html{
+    margin:0;
+    font-size: 10px;
+    scroll-behavior:smooth;
+    font-family:NimbusSanL-RegIta-webfont,sans-serif;
+    width: 100%;
+    overflow-x: hidden;
+    color: black;
+}
+body{
+  margin: 0;
+  overflow-x: hidden;
+}
+#navbar {
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+    font-size: 2.5rem;
+    font-weight:400;
+    position: fixed;
+    color: #ffff;
+    mix-blend-mode: difference;
+    z-index: 5;
+    justify-content: space-between;
+}
+#navbar a{
+    text-decoration: none;
+    text-align: center;
+    color: currentColor;
+    background-color: transparent;
+  
+}
+#name{
+    justify-content: left;
+    padding-top: 2rem;
+    padding-left: 2rem;
+ }
+ #name-hidden{
+     visibility: hidden;
+     padding-top: 2rem;
+     padding-left: 2rem;
+     display: none;
+ }
+#navlinks{
+    display: flex;
+    justify-content: center;
+    padding-top: 2rem;
+    padding-right: 2rem;
+    padding-left: 2rem;
+}
+#navimg{
+    display: flex;
+    justify-content: right;
+    padding-top: 2rem;
+    padding-right: 2rem;
+}
+#navimg svg{
+    height: 3rem;
+    width: 3rem;
+    justify-content: left;
+}
+#top-div{   
+    display: flex;
+    height: 40rem;
+    background-color: white;
+    animation:bottom-to-top 2s; 
+    align-items: flex-end;
+    padding-bottom: 2rem;
+    width:100% ;
+}
+@keyframes bottom-to-top {
+    0%{
+        height: 100rem;
+    }
+
+    100%{
+        height: 40rem;
+    }
+
+}
+
+#top-div span{
+    position: relative;
+    text-align: center;
+    font-family: sans-serif;
+    text-transform: uppercase;
+    font-size: 3em;
+    letter-spacing: 4px;
+    width: 100%;
+    overflow: hidden;
+    background: linear-gradient(90deg, #000, #fff, #000);
+    background-repeat: no-repeat;
+    background-size: 80%;
+    animation: animate 4s linear infinite;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: rgba(255, 255, 255, 0);
+  }
+  
+  @keyframes animate {
+    0% {
+      background-position: -500%;
+    }
+    100% {
+      background-position: 500%;
+    }
+  }
+#about{
+    display: flex;
+    flex-direction: column;
+    background-color: black;
+    height: 60rem;
+    background-image: url(images/assets/images/about-2.jpg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position:center;
+    color: #fff;
+    mix-blend-mode: difference;
+    align-items: flex-end;
+    padding: 2rem;
+}
+#about-wrapper{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+}
+#about h1{
+    font-size: 6rem;
+    text-align:left;
+    font-weight: 600;
+    width: 100%;
+    font-weight: 400;
+    margin: 2rem;
+}
+#about span{
+    font-size: 3rem;
+    width: 95%;
+    font-weight: 300;
+    padding: 4rem;
+    padding-left: 0;
+    padding-right: 0;
+}
+#resume {
+    margin-top: 2rem;
+    text-decoration: none;
+    display: flex;
+    width: 100%;
+    align-content: center;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+}
+#resume-button{
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+}
+
+
+#resume-img{
+    width: 5rem;
+    height: 5rem;
+}
+#resume span{
+    margin-left: 6rem;
+    align-items: center;
+    color: #fff;
+    mix-blend-mode: difference;
+    text-decoration: none;
+
+}
+#resume-button span{
+    padding: 0%;
+    margin-left: 2rem;
+}
+#services{
+    background-color: white;
+    width: 100%;
+    height: 100%;
+    background-repeat: no-repeat;
+    background-position: right;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+#service-wrapper{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#services h1{
+    text-align: center;
+    color: white;
+    mix-blend-mode: difference;
+    font-size: 6rem;
+    font-weight: 400;
+    margin-bottom: 2rem;
+    margin-top: 30rem;
+    width: 100%;
+}
+#services span{
+    display: block;
+    font-size: 2rem;
+    width: 100%;
+    text-align: center;
+    margin-bottom: 4rem;
+}
+.grp1{
+    display: flex;
+    flex-direction:row;
+
+    justify-content: space-evenly;
+    margin-bottom: 2rem;
+    
+}
+.grp2{
+    display: flex;
+    flex-direction:row;
+    justify-content: space-evenly;
+    
+}
+.clip{
+    width: 60rem;
+    height: 60rem;
+}
+figcaption{
+    text-align: center;
+    font-size: 1.7rem;
+}
+#services-2{
+    background-color: white;
+    padding-top: 40rem;
+    padding-right: 50rem;
+    padding-left: 5rem;
+    text-align: left;
+    padding-bottom: 3rem;
+    background-image: url(images/assets/images/business-3d.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: right;
+}
+#services-2 span{
+  font-family: sans-serif;
+}
+#services-2 span span{
+  font-family: "Helvetica Now Display";
+  font-size: 3rem;
+}
+#quote{
+    font-size: 5rem;
+    width: 60% ;
+}
+#skills{
+    margin: 0%;
+    background-color: rgb(0, 0, 0);
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height:70rem;
+    padding: 2rem;
+    padding-top: 10rem;
+    padding-bottom: 12rem;
+    color: white;
+    align-items:flex-end
+
+
+}
+.skills-heading{
+    font-size: 6rem;
+    text-align: center;
+    width: 100%;
+    margin-bottom: 3rem;
+}
+#skills-image img {
+width: 45vw;
+height: 70vw;
+}
+#skills-grp-wrapper{
+    display: flex;
+    flex-direction: column;
+    border-left: white solid;
+    justify-content: center;
+    border-width: 1vw;
+    padding: 8vw;
+}
+#skills-group{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    justify-content:center;
+}
+#skills-image{
+    display: flex;
+    flex-direction: row;
+    justify-content: right;
+    align-items: center;
+}
+
+.skills-img{
+    width: 12vw;
+    margin: 2vw;
+}
+#grp-skills-1{
+    display: flex;
+    flex-direction: row; 
+    justify-content: space-evenly;
+    
+}
+#grp-skills-2{
+    display: flex;
+    flex-direction: row; 
+    justify-content: space-evenly;
+    
+}
+.skills-caption{
+    margin: 0%;
+}
+.skills-caption{
+    width: 100%;
+}
+#projects{
+    background-color: white;
+    padding: 2rem;
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+}
+
+#projects h1{
+      text-align: center;
+      font-size: 7rem;
+}
+.clip-mkv{
+    width: 60rem;
+    height: 40rem;
+}
+#contact{
+    background-color: black;
+    color: white;
+    height:max-content;
+    padding: 5rem;
+    padding-left:15rem;
+    display: flex;
+    flex-direction: row;
+}
+#contact-wrapper{
+    width: 70%;
+}
+#contact-heading{
+    font-size: 3rem;
+}
+#contact-heading-sub{
+    font-size: 4rem;
+}
+#contact p{
+    width: 70%;
+    font-size: 3rem;
+}
+form{
+    display: flex;
+    flex-direction:column;
+}
+form label{
+    padding: 2rem;
+}
+#name-contact{
+    width: 30rem;
+    height: 4rem;
+}
+#email{
+    width: 30rem;
+    height: 4rem;
+}
+#message{
+    width: 50rem;
+    height: 15rem;
+    align-items: center;
+}
+form button{
+    width:15rem;
+    height: 6rem;
+    font-size: 2.5rem;
+    font-family: "Helvetica Now Display";
+    font-weight: 700;
+    overflow: hidden;
+    background: linear-gradient(90deg, #000, #fff, #000);
+    background-repeat: no-repeat;
+    background-size: 80%;
+    animation: animate 4s linear infinite;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: rgba(255, 255, 255, 0);
+    border:Turquoise solid;
+}
+.input-form{
+    border:4rem;
+    border-right: solid Turquoise;
+    border-bottom: solid Turquoise;
+}
+#social{
+    display: flex;
+    flex-direction:column;
+    justify-content: center;
+}
+#social-text{
+    font-size: 3rem;
+    color: white;
+}
+#wrapper img{
+    width: 3rem;
+    margin: 1rem;
+}
+#madeby{
+    background-color: black;
+    color: white;
+    text-align: center;
+}
+#madeby span{
+  
+    font-size: 2rem;
+}
+@media screen and (max-width:1086px){
+    #navbar{
+        width: 100%;
+        position: fixed;
+    }
+    #navimg{
+        display: none;
+    }
+    #top-div{
+        height: 65vw;
+    }
+    #top-div span{
+        font-size: 2vw;
+    }
+    #about{
+        height: max-content;
+    }
+    #about h1{
+        font-size: 6.5vw;
+        margin: 0;
+        padding-left: 5vw;
+    }
+    #about span{
+        font-size: 2.5vw;
+        padding: 5vw;
+        margin: 0%;
+    }
+    #resume-button span{
+        padding: 0%;
+        margin-left: 2rem;
+    }
+    #resume{
+        margin: 0;
+    }
+    #resume-img{
+        width: 5vw;
+        height: 5vw;
+        margin-left: 4vw;
+    }
+    .clip{
+        width: 40vw;
+        height: 40vw;
+    }
+    figcaption{
+        text-align: center;
+        font-size: 1.9vw;
+    }
+    #services h1{
+        font-size: 10vw;
+        margin-top: 30vw;
+    }
+    #services span{
+        font-size: 4vw;
+    }
+    #services-2{
+        display:flex;
+        background-color: white;
+        padding-top: 20vw;
+        padding-right: 10vw;
+        padding-left: 5vw;
+        text-align: left;
+        padding-bottom: 3vw;
+        height: 50vw;
+        align-items: flex-end;
+    }
+    #services-2 span{
+      font-family: sans-serif;
+    }
+    #services-2 span span{
+      font-family: "Helvetica Now Display";
+      font-size: 3vw;
+    }
+    #quote{
+        font-size: 4vw;
+        width: 60% ;
+    }
+    .skills-heading{
+        font-size: 6vw;
+        text-align: center;
+        width: 100%;
+        margin-bottom: 3vw;
+    }
+    .clip-mkv{
+        width: 40vw;
+        height: 25vw;
+    }
+    #projects h1{
+        font-size: 6vw;
+ 
+    }
+    #projects{
+        padding: 5vw;
+        padding-top: 4vw;
+    }
+    #project-wrapper{
+        padding: 3vw;
+    }
+    #contact{
+        padding: 5vw;
+        padding-top: 9vw;
+    }
+    #contact-heading {
+        font-size: 5vw;
+    }
+    #contact-heading-sub {
+        font-size: 7vw;
+    }
+    #contact p{
+    width: 80%;
+    font-size: 3vw;
+    }
+    #name-contact {
+        width: 36vw;
+        height: 4vw;
+    }
+    #email {
+        width: 36vw;
+        height: 4vw;
+    }
+    #message {
+        width: 50vw;
+        height: 15vw;
+        align-items: center;
+    }
+    #social-text {
+        font-size: 4vw;
+    }
+    #wrapper img {
+        width: 4vw;
+        margin: 1vw;
+    }
+    form button {
+        width: 17vw;
+        height: 6vw;
+    }
+    #skills{
+        height:max-content; 
+    }
+
+}
+@media screen and (max-width:740px){
+    #navbar{
+        width: 100%;
+        font-size: 4vw;
+        position: fixed;
+    }
+    #name{
+        display: none;
+    visibility: hidden; 
+   }
+   #name-hidden{
+       display: flex;
+       visibility: visible;
+   }
+    #navimg{
+        display: none;
+    }
+    #top-div span{
+        font-size: 2.5vw;
+    }
+
+    #madeby span{
+      
+        font-size: 3vw;
+    }
+    
+}
+@media screen and (max-width:440px){
+  
+   
+    #top-div span{
+        font-size: 3.5vw;
+    }
+  
+}
