@@ -42,7 +42,7 @@ body{
     text-align: center;
     color: currentColor;
     background-color: transparent;
-    margin:0 1vw;
+    margin:0 0.7vw;
   
 }
 #name{
@@ -60,7 +60,6 @@ body{
     display: flex;
     justify-content: center;
     padding-top: 2rem;
-    padding-right: 2rem;
     padding-left: 2rem;
 }
 #navimg{
