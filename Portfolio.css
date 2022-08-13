@@ -242,7 +242,7 @@ a{
 .grp1{
     display: flex;
     flex-direction:row;
-    gap: 10rem;
+    gap: 10vw;
     justify-content: space-evenly;
     margin-bottom: 2rem;
     
@@ -250,7 +250,7 @@ a{
 .grp2{
     display: flex;
     flex-direction:row;
-    gap: 10rem;
+    gap: 10vw;
     justify-content: space-evenly;
     
 }
@@ -374,14 +374,14 @@ height: 70vw;
 
 #projects h1{
       text-align: center;
-      font-size: 7rem;
+      font-size: 7vw;
       margin-bottom: 2rem;
 }
 
 .proj-grp1{
     display:flex;
     flex-direction: row;
-    gap: 10rem;
+    gap: 10vw;
     justify-content: center;
     margin-bottom: 10rem;
 }   
@@ -390,6 +390,8 @@ height: 70vw;
     text-align: center;
     font-size: 2rem;
     border: #000 solid;
+    display: flex;
+    align-items: center;
 }
 .proj img{
     width: 100%;
@@ -397,7 +399,9 @@ height: 70vw;
     border-bottom: #000 solid;
 
 }
-
+.proj p{
+    font-size: 2vw;
+}
 .clip-mkv{
     width: 60rem;
     height: 30rem;
